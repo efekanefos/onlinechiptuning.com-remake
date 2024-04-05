@@ -389,3 +389,179 @@ body {
   padding: 0.35rem;
   border-radius: 0.25rem;
 }
+
+/*! Service Page */
+.pageHeroContent {
+  background: url(./images/servicesPage/page_hero_section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 325px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border-bottom: 1px solid #fff;
+}
+.pageHeroImg {
+  width: 100%;
+}
+.servicePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.servicePageBoxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  gap: 1rem;
+  margin: 0rem auto 1rem;
+}
+.servicePageBoxImgContent {
+  max-width: 3rem;
+}
+.servicePageBoxImg {
+  width: 100%;
+}
+
+.servicePageBoxTitle {
+  display: inline-block;
+}
+.servicePageBoxTitle,
+.pageMainTitle {
+  font-family: "Russo One";
+  color: #a00000;
+  font-weight: 500;
+  border-bottom: 2px solid #fff;
+}
+.pageMainTitle {
+  font-size: 5rem;
+  margin-top: 2rem;
+  color: #fff;
+  margin-top: auto;
+  border-bottom: none;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.servicePageBoxDesc {
+  font-family: "Nunito";
+  color: #fff;
+  font-size: 0.9rem;
+}
+.servicePageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  max-width: 300px;
+  box-shadow: inset 0 -20px 80px -20px #ffffff1f;
+  padding: 1rem;
+  transition: all 0.5s;
+  border: 1px solid #ffffff1f;
+}
+.servicePageBox:hover {
+  border: 1px solid #a00;
+}
+.servicePageButtonContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+.servicePageButtonImgContent {
+  max-width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicePageButtonLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicePageButtonImg {
+  width: 100%;
+}
+.servicePageButtonText {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Nunito";
+}
+
+/*! Service Details Page */
+.serviceLeftMenuList,
+.serviceLeftMenuContent {
+  width: 100%;
+}
+.serviceLeftMenuListItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Nunito";
+  gap: 0.5rem;
+  background-color: rgba(117, 131, 147, 0.1);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+}
+.serviceLeftMenuListItem.active {
+  background: rgba(170, 0, 0, 0.25);
+  border: 2px solid rgba(117, 131, 147, 0.1);
+}
+.serviceLeftMenuLink {
+  color: #fff;
+  text-decoration: none;
+}
+.serviceLeftMenuImgContent {
+  max-width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceLeftMenuImg {
+  width: 100%;
+}
+.serviceDetailsContent {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  justify-content: center;
+  justify-items: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.serviceDetailsDescContent {
+  margin-top: 1rem;
+  background-color: rgba(117, 131, 147, 0.1);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+.serviceDetailsDescTitle {
+  font-family: "Russo One";
+  border-bottom: 2px solid #fff;
+  color: #a00;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.serviceDetailsDesc {
+  font-family: "Nunito";
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.serviceDetailsDescImgContent {
+  border-radius: 0.25rem;
+}
+.serviceDetailsDescImg {
+  border-radius: 0.25rem;
+  width: 100%;
+  border: 2px solid rgba(117, 131, 147, 0.1);
+}
