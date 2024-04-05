@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2d3436;
+  background: url("./images/car_brands/bckg-1.png"),
+    linear-gradient(30deg, #0f0f0f 0%, rgb(15, 15, 15) 100%);
+}
+
+.mainSectionTitle {
+  font-family: "Russo One";
+  text-align: center;
+  border-bottom: 5px solid #a00000;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.heroWrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.heroInfoContent,
+.heroImgContent {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+}
+.heroInfoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  grid-column: 1 / 1;
+}
+
+.heroImgContent {
+  margin: 0 auto;
+  position: relative;
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroImg {
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  position: relative;
+  object-fit: contain;
+  max-width: 530px;
+}
+.heroImgContent::before {
+  content: "01";
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  z-index: 9;
+  font-size: 3rem;
+  font-family: "Orbitron";
+  color: #fff;
+}
+.heroImgContent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(115deg, #a00000, #c62128);
+  z-index: 0;
+}
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Russo One";
+  color: #fff;
+}
+.heroTitle--border {
+  border-bottom: 5px solid #a00000;
+}
+.heroDesc {
+  font-family: "Nunito";
+  color: #fff;
+  font-weight: 600;
+}
+.heroButtons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+.heroFileButton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Russo One";
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(115deg, #a00000, #c62128);
+  border-radius: 0.5rem;
+}
+.heroButton {
+  font-family: "Russo One";
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid #a00000;
+}
+
+/*? Car Brand */
+.carBrandContent {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(69, 69, 75, 0.25) 50%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+.carBrandSlider {
+  max-width: 100%;
+  border-left: none;
+  border-right: none;
+  margin: 0rem auto 2rem;
+}
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splide__pagination {
+  bottom: -0em;
+  display: none;
+}
+.carBrandImgContent {
+  max-width: 6rem;
+}
+.carBrandImg {
+  width: 100%;
+}
+
+/*? Service Cards */
+.serviceCardContent {
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+.serviceCardContent .mainSectionTitle {
+  margin-bottom: 1.5rem;
+}
+.serviceCards {
+  padding: 0 1rem;
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.serviceCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 400px;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(21, 21, 21) 100%
+  );
+  box-shadow: rgba(100, 100, 111, 0.2) 5px 5px 5px 0px;
+}
+.serviceCardImgContent {
+  min-width: 160px;
+}
+.serviceCardImg {
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 0.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.serviceCardInfoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 0.25rem;
+}
+.serviceCardFlex {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.serviceCards,
+.serviceCardSideImgContent {
+  width: 100%;
+}
+.serviceCardSideImgContent {
+  max-width: 400px;
+  border-radius: 0.25rem;
+}
+.serviceCardSideImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  display: flex;
+  box-shadow: 5px 5px rgba(160, 0, 0, 0.5);
+}
+
+.serviceCardDesc,
+.serviceCardButton {
+  font-family: "Nunito";
+}
+.serviceCardTitle {
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Russo One";
+}
+.serviceCardDesc {
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 600;
+}
+.serviceCardButton {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+.serviceCardContent .splide__pagination {
+  bottom: -1.5rem;
+}
+
+/*? Steps */
+.stepsContent {
+  max-width: 1250px;
+  margin: 3rem auto 3rem;
+}
+.stepsContent .mainSectionTitle {
+  margin-bottom: 1.5rem;
+}
+.stepsBoxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.stepsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stepsBoxImgContent {
+  max-width: 150px;
+  position: relative;
+}
+.stepsBoxImgContent::after {
+  content: "";
+  width: 100%;
+  height: 0.25rem;
+  background: linear-gradient(115deg, #a00000, #c62128);
+  position: absolute;
+  top: 48.5%;
+  left: 95%;
+  transform: translate(0%, -50%);
+  z-index: -1;
+}
+.stepsBox:last-child .stepsBoxImgContent::after {
+  display: none;
+}
+.stepsBoxImg {
+  width: 100%;
+}
+.stepsBoxTitle,
+.stepsBoxDesc {
+  font-family: "Nunito";
+  text-align: center;
+  color: #fff;
+  max-width: 245px;
+}
+
+/*? Blog Cards */
+
+.blogCardContent {
+  max-width: 1200px;
+  margin: 3rem auto 3rem;
+}
+.blogCardContent .mainSectionTitle {
+  margin-bottom: 1.5rem;
+}
+
+.blogCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+.blogCard {
+  max-width: 290px;
+  min-width: 290px;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgba(50, 50, 50, 0.75) 0%,
+    rgba(0, 0, 0, 0.75) 99.4%
+  );
+  min-height: 23rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 5px 5px 10px 0px;
+}
+
+.blogCardTitle {
+  font-family: "Russo One";
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  margin-right: auto;
+}
+.blogCardDesc {
+  color: #ccc;
+  font-family: "Nunito";
+  font-size: 0.85rem;
+  margin-bottom: auto;
+}
+.blogCardImgContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+
+.blogCardImg {
+  display: flex;
+  border-radius: 0.25rem;
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+.blogCardButton {
+  display: inline-block;
+  margin-right: auto;
+  color: #fff;
+  font-family: "Nunito";
+  text-decoration: none;
+  font-size: 0.95rem;
+  background-color: #a00000;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.35rem;
+  border-radius: 0.25rem;
+}
