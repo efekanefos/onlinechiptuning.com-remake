@@ -548,9 +548,10 @@ body {
   justify-content: center;
   justify-items: flex-start;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 .serviceDetailsDescContent {
   margin-top: 1rem;
@@ -577,6 +578,27 @@ body {
   border-radius: 0.25rem;
   width: 100%;
   border: 2px solid rgba(117, 131, 147, 0.1);
+}
+
+@media (max-width: 768px) {
+  .serviceDetailsContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviceLeftMenuContent {
+    order: 1;
+  }
+  .serviceLeftMenuList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .serviceLeftMenuListItem {
+    margin: 0;
+  }
+  .serviceDetailsDescContent {
+    margin-top: 0rem;
+  }
 }
 
 /*? About Us Page */
