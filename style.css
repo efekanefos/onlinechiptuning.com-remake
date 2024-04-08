@@ -574,7 +574,22 @@ body {
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+}
+
+.overviewImgContent {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overviewImg {
+  width: 100%;
+  display: flex;
+}
+.overviewImgSide,
+.overviewContentSide {
+  width: 100%;
 }
 
 .aboutTitleContent {
@@ -723,4 +738,53 @@ body {
   width: 0.25rem;
   height: 100%;
   border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .overviewContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .overviewImgSide {
+    order: 1;
+  }
+  .overviewImgSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 950px) {
+  .aboutBigTitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .featuresContent {
+    flex-direction: column;
+  }
+  .featuresInfoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .featuresBoxes {
+    flex-wrap: wrap;
+  }
+  .faqContent {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageMainTitle {
+    font-size: 3rem;
+  }
+  .pageHeroContent {
+    height: 200px;
+  }
+  .aboutTitle {
+    font-size: 1.5rem;
+  }
 }
