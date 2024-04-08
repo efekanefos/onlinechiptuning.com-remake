@@ -565,3 +565,162 @@ body {
   width: 100%;
   border: 2px solid rgba(117, 131, 147, 0.1);
 }
+
+/*? About Us Page */
+
+.overviewContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.aboutTitleContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.aboutTitle {
+  font-family: "Russo One";
+  color: #a00000;
+  font-weight: 400;
+  font-size: 2rem;
+  border-bottom: 2px solid #fff;
+}
+.overviewDesc,
+.featuresBoxTitle {
+  color: #fff;
+  font-family: "Nunito";
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+.featuresWrapper {
+  background: url(./images/about_us_page/about_features_background.jpg) center
+    no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featuresContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+.featuresInfoContent,
+.featuresBoxSide {
+  width: 100%;
+}
+.aboutTitleImgContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutTitleImg {
+  width: 100%;
+  height: 100%;
+}
+.featuresContent .aboutTitle,
+.featuresContent .aboutBigTitle {
+  color: #fff;
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.featuresContent .aboutBigTitle {
+  font-size: 2rem;
+}
+.featuresBoxes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.featuresBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  min-height: 200px;
+  width: 180px;
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.25);
+}
+.aboutButton {
+  color: #fff;
+  font-family: "Nunito";
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.faqContent {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+.faqAccordionSide,
+.faqImgSide {
+  width: 100%;
+}
+.faqImgSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faqImgContent {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faqImg {
+  width: 100%;
+  display: flex;
+}
+.faqTitle {
+  font-size: 2rem;
+}
+.faqAccordionQuestion,
+.faqAccordionAnswer,
+.faqTitle {
+  font-family: "Nunito";
+  color: #fff;
+}
+.faqAccordionQuestion {
+  font-size: 1.25rem;
+  border-bottom: 2px solid #a00;
+  width: fit-content;
+}
+.faqAccordionContent {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+.faqAccordionContent::before {
+  content: "";
+  background-color: #a00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.25rem;
+  height: 100%;
+  border-radius: 0.5rem;
+}
