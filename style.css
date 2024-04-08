@@ -38,7 +38,7 @@ body {
 .heroImgContent {
   width: 100%;
   height: 100%;
-  padding: 5rem 0;
+  padding: 5rem 0.5rem;
 }
 .heroInfoContent {
   display: flex;
@@ -125,6 +125,22 @@ body {
   color: #fff;
   text-decoration: none;
   border-bottom: 3px solid #a00000;
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroImgContent {
+    display: none;
+  }
+  .heroImgContent::after {
+    width: 100%;
+  }
+  .heroInfoContent {
+    order: 1;
+  }
 }
 
 /*? Car Brand */
@@ -240,6 +256,7 @@ body {
   color: #fff;
   font-weight: 400;
   font-family: "Russo One";
+  border-bottom: 2px solid #a00;
 }
 .serviceCardDesc {
   font-size: 0.85rem;
@@ -256,6 +273,23 @@ body {
 }
 .serviceCardContent .splide__pagination {
   bottom: -1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .serviceCardFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .serviceCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 /*? Steps */
@@ -305,6 +339,14 @@ body {
   text-align: center;
   color: #fff;
   max-width: 245px;
+}
+@media (max-width: 768px) {
+  .stepsBoxes {
+    flex-direction: column;
+  }
+  .stepsBoxImgContent::after {
+    display: none;
+  }
 }
 
 /*? Blog Cards */
@@ -587,6 +629,7 @@ body {
   }
   .serviceLeftMenuContent {
     order: 1;
+    margin-bottom: 1rem;
   }
   .serviceLeftMenuList {
     display: grid;
