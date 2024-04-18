@@ -924,3 +924,185 @@ body {
     font-size: 1.5rem;
   }
 }
+
+/*! Tuning Pages */
+
+.tuningContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+.tuningImgContent {
+  max-width: 500px;
+}
+.tuningImg {
+  width: 100%;
+}
+.tuningInfoRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.tuningInfoTitle {
+  color: #a00;
+  font-family: "Nunito";
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.tuningInfoDesc {
+  font-family: "Nunito";
+  color: #fff;
+}
+.tuningInfoButton {
+  background: #a00;
+  padding: 0.65rem 2.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Nunito";
+  clip-path: polygon(
+    15px 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    0 100%,
+    0 15px
+  );
+  transition: clip-path 0.25s, background-color 0.25s;
+}
+.tuningInfoButton:hover {
+  background: rgb(214, 0, 0);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 15px),
+    100% 100%,
+    0 100%,
+    0 15px
+  );
+}
+
+.sectionDivideContent {
+  background: url(./images/tuningPage/tuning_contact_background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  min-height: 300px;
+  margin: 2rem 0;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.contactBox {
+  background-color: #0f0f0f;
+  box-shadow: 5px 5px #a00;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  max-width: 600px;
+  min-height: 200px;
+  position: absolute;
+  bottom: -9rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+.contactBoxTitle {
+  font-family: "Russo One";
+  color: #a00;
+  font-weight: 500 !important;
+  font-size: 1.75rem;
+}
+.contactBoxDesc {
+  font-family: "Nunito";
+  color: #fff;
+}
+
+.tuningBrandContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tuningBrandBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.tuningBrandTitle {
+  color: #a00;
+  font-family: "Russo One";
+  font-weight: 500;
+  font-size: 2rem;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+.tuningBrandBoxImgContent {
+  max-width: 10rem;
+  background-color: #0f0f0f;
+  box-shadow: 5px 5px #a00;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #a00;
+  border-left: 1px solid #a00;
+}
+.tuningBrandBoxImg {
+  width: 100%;
+}
+
+@media (max-width: 935px) {
+  .tuningContent {
+    grid-template-columns: 1fr;
+  }
+  .contactBox {
+    min-width: 400px;
+  }
+  .contactBoxTitle {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 435px) {
+  .contactBox {
+    min-width: unset;
+    width: 90%;
+  }
+
+  .tuningInfoRow {
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+  }
+  .tuningBrandTitle {
+    font-size: 1.5rem;
+  }
+  .tuningInfoContent,
+  .tuningInfoTitle {
+    text-align: center;
+  }
+  .sectionDivideContent {
+    margin-top: 0rem;
+  }
+}
