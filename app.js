@@ -19,3 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   serviceSlider.mount();
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var homeServiceSlider = new Splide(".homeServiceSlider", {
+    perPage: 4,
+    rewind: true,
+    rewindSpeed: 500,
+    autoplay: true,
+    gap: "0.5rem",
+    perMove: 1,
+    speed: 500,
+  });
+  homeServiceSlider.mount();
+});
