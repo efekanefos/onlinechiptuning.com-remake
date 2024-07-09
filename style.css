@@ -1311,3 +1311,12 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 400px) {
+  .tuningMainTitle,
+  .mainSectionTitle {
+    font-size: 1.5rem;
+  }
+  .whyUsIconBox {
+    flex-direction: column;
+  }
+}

@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "0.5rem",
     perMove: 1,
     speed: 500,
+    breakpoints: {
+      1000: {
+        perPage: 3,
+      },
+      768: {
+        perPage: 2,
+      },
+      550: {
+        perPage: 1,
+      },
+    },
   });
   homeServiceSlider.mount();
 });
