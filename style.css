@@ -410,18 +410,29 @@ body {
   font-size: 0.85rem;
   margin-bottom: auto;
 }
-.blogCardDate {
+.blogCardDate,
+.blogCardCategory {
   position: absolute;
   z-index: 1;
   color: #fff;
   background: linear-gradient(90deg, #a50506, #c31f25);
-  padding: 5px 20px;
+  padding: 5px 12px;
   border-radius: 8px;
   font-size: 0.9rem;
   font-family: "Nunito";
   top: 0.5rem;
   right: 0.5rem;
   font-weight: 600;
+}
+.blogCardCategory {
+  left: 0.5rem;
+  right: unset;
+}
+.blogCardCategory--adblue {
+  background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+}
+.blogCardCategory--ariza {
+  background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
 }
 .blogCardImgContent {
   display: flex;
