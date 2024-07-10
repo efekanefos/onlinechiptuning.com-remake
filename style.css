@@ -711,7 +711,11 @@ body {
   width: 100%;
   border: 2px solid rgba(117, 131, 147, 0.1);
 }
-
+.serviceDetailsList {
+  font-family: "Nunito";
+  color: #fff;
+  padding-left: 1rem;
+}
 @media (max-width: 768px) {
   .serviceDetailsContent {
     display: flex;
