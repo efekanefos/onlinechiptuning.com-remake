@@ -6,6 +6,7 @@
 body {
   background-color: #2d3436;
   background: url("./images/car_brands/bckg-1.png"), linear-gradient(30deg, #0f0f0f 0%, rgb(15, 15, 15) 100%);
+  overflow-x: hidden;
 }
 
 .mainSectionTitle {
