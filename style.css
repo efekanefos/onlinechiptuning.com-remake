@@ -10,6 +10,15 @@ body {
   overflow-x: hidden;
 }
 
+.heroWrapper,
+.carBrandContent,
+.stepsContent,
+.serviceBoxContent,
+.testimonialContent,
+.whyUsWrapper,
+.blogCardContent {
+  overflow: hidden;
+}
 .mainSectionTitle {
   font-family: "Russo One";
   text-align: center;
@@ -1173,8 +1182,7 @@ body {
 .serviceBoxLink {
   display: block;
   border-radius: 1rem;
-  max-height: 380px;
-  overflow: hidden;
+  max-width: 285px;
 }
 .serviceBoxes {
   display: flex;
