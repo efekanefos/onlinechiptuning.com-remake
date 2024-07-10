@@ -42,3 +42,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   homeServiceSlider.mount();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".testimoialSlider").mount(window.splide.Extensions);
+  var testimoialSlider = new Splide(".testimoialSlider", {
+    rewind: true,
+    drag: "free",
+    focus: "center",
+    perPage: 3,
+    gap: "0.5rem",
+    autoScroll: {
+      speed: 1,
+    },
+    arrows: false,
+    breakpoints: {
+      1400: {
+        perPage: 2,
+      },
+      768: {
+        perPage: 1,
+      },
+    },
+  });
+  testimoialSlider.mount();
+});
