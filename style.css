@@ -1352,6 +1352,7 @@ body {
 /*! Testimonials */
 .testimonialContent .tuningTitleContent {
   max-width: 1200px;
+  margin: 0 auto;
 }
 .testimonialContent .tuningMainTitle {
   position: relative;

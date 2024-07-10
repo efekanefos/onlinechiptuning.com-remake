@@ -18,6 +18,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 "
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
     <title>Onlinechiptuning</title>
   </head>
@@ -26,25 +27,25 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <section class="heroWrapper">
       <div class="heroContent">
         <div class="heroInfoContent">
-          <h2 class="heroTitle">
+          <h2 class="heroTitle" data-aos="fade-up" data-aos-duration="700">
             Dosyalarınız
             <span class="heroTitle--border">En Hızlı Şekilde </span> Düzenlensin!
           </h2>
-          <p class="heroDesc">Araç dosyanızı OnlineChiptuning'e gönderin ve işlemlerinizi seçin. Dosyanızın düzenlenmiş halini en kısa sürede size göndereceğiz.</p>
+          <p class="heroDesc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">Araç dosyanızı OnlineChiptuning'e gönderin ve işlemlerinizi seçin. Dosyanızın düzenlenmiş halini en kısa sürede size göndereceğiz.</p>
           <div class="heroButtons">
-            <a href="#" class="heroFileButton">Dosya Gönder</a>
-            <a href="/hizmetlerimiz.html" class="heroButton"> Hizmetlerimiz &rarr; </a>
+            <a href="#" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500" class="heroFileButton">Dosya Gönder</a>
+            <a href="/hizmetlerimiz.html" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" class="heroButton"> Hizmetlerimiz &rarr; </a>
           </div>
         </div>
         <div class="heroImgContent">
-          <img src="./images/hero/red_Car.png" alt="Blue BMW Car" class="heroImg" />
+          <img data-aos="fade-up" data-aos-duration="700" data-aos-delay="200" src="./images/hero/red_Car.png" alt="Blue BMW Car" class="heroImg" />
         </div>
       </div>
     </section>
 
     <!-- Car Brands -->
 
-    <section class="carBrandContent">
+    <section class="carBrandContent" data-aos="fade-down" data-aos-duration="700" data-aos-delay="500">
       <div class="splide carBrandSlider" role="group">
         <div class="splide__track">
           <ul class="splide__list">
@@ -166,8 +167,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <!-- Steps -->
 
     <section class="stepsContent">
-      <h2 class="mainSectionTitle">DOSYALARINIZI SADECE 4 BASİT ADIMDA ALIN!</h2>
-      <div class="stepsBoxes">
+      <h2 class="mainSectionTitle" data-aos="fade-down" data-aos-duration="700">DOSYALARINIZI SADECE 4 BASİT ADIMDA ALIN!</h2>
+      <div class="stepsBoxes" data-aos="fade-up" data-aos-duration="700">
         <div class="stepsBox">
           <div class="stepsBoxImgContent">
             <img src="./images/steps/register_circle.png" alt="Register Step" class="stepsBoxImg" />
@@ -567,5 +568,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
 "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
