@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     autoScroll: {
       speed: 1,
     },
+    breakpoints: {
+      550: {
+        perPage: 3,
+      },
+    },
     arrows: false,
   });
   carBrandSlider.mount();
