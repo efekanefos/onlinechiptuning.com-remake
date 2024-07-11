@@ -32,21 +32,31 @@ body {
   padding: 0 1rem;
   position: relative;
 }
-.navbarLinkListItem.hasInnerList:hover .navbarInnerList,
-.navbarInnerList:hover {
+.navbarLinkListItem.hasInnerList:hover .navbarInnerList {
+  display: block;
+}
+.navbarInnerList.hasInnerList:hover .navbarUnderList.double {
   display: block;
 }
 .navbarInnerListItemLink {
   color: #fff;
   text-decoration: none;
 }
-.navbarInnerList {
+.navbarInnerList,
+.navbarUnderList {
   display: none;
   list-style: none;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   top: 75px;
 }
+.navbarUnderList.double {
+  display: none;
+  left: -9.35rem;
+  top: 0px;
+  max-width: 150px;
+}
+
 .navbarInnerListItem {
   color: #fff;
   font-family: "Nunito";
