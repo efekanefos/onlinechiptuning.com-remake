@@ -71,3 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   testimoialSlider.mount();
 });
+
+const mobileButton = document.querySelector(".mobileButton");
+const navbarLinkList = document.querySelector(".navbarLinkList");
+const navbarLinkListItem = document.querySelectorAll(".navbarLinkListItem");
+
+mobileButton.addEventListener("click", () => {
+  if (navbarLinkList.classList.contains("open")) {
+    navbarLinkList.classList.remove("open");
+  } else {
+    navbarLinkList.classList.add("open");
+  }
+  navbarLinkListItem.forEach((item) => {
+    if (item.classList.contains("open")) {
+      item.classList.remove("open");
+    } else {
+      item.classList.add("open");
+    }
+  });
+});

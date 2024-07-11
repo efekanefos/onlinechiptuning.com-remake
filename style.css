@@ -9,6 +9,131 @@ body {
   background: url("./images/car_brands/bckg-1.png"), linear-gradient(30deg, #0f0f0f 0%, rgb(15, 15, 15) 100%);
   overflow-x: hidden;
 }
+/*! Navbar */
+.headerContent {
+  background-image: radial-gradient(circle, rgb(0, 0, 0, 0.5) 20%, rgb(37, 40, 42, 0.5) 100%);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: none;
+}
+.navbarContent {
+  z-index: 200;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
+.navbarLinkListItem.hasInnerList:hover .navbarInnerList,
+.navbarInnerList:hover {
+  display: block;
+}
+.navbarInnerListItemLink {
+  color: #fff;
+  text-decoration: none;
+}
+.navbarInnerList {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 75px;
+}
+.navbarInnerListItem {
+  color: #fff;
+  font-family: "Nunito";
+  padding: 10px 5px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbarLinkList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbarLinkListItemLink {
+  color: #fff;
+  font-size: 1.125rem;
+  text-decoration: none;
+  font-family: "Nunito";
+  padding: 2rem 0;
+}
+
+.mobileButton {
+  background-color: transparent;
+  border: none;
+  max-width: 2rem;
+  cursor: pointer;
+}
+.mobileButtonIcon {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mobileButton {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    background-image: radial-gradient(circle, rgb(0, 0, 0) 20%, #25282a 100%) !important;
+  }
+  .navbarLinkList {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    top: 81px;
+    left: 0;
+    align-items: flex-start;
+    gap: 0;
+    background-image: radial-gradient(circle, rgb(0, 0, 0) 20%, rgb(37, 40, 42) 100%) !important;
+    transition: all 0.75s;
+    transform: translateX(-100%);
+  }
+  .navbarLinkListItem.open {
+    transform: translateX(0);
+  }
+  .navbarLinkList.open {
+    transform: translateX(0);
+  }
+  .navbarLinkListItemLink {
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    transition: all 0.5s;
+    color: #fff;
+  }
+  .navbarLinkListItem {
+    transform: translateX(-100%);
+    padding: 0.5rem;
+    border-bottom: 1px solid #ff8500;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .navbarLinkListItem:first-child {
+    transition-delay: 0.5s;
+  }
+  .navbarLinkListItem:nth-child(2) {
+    transition-delay: 0.55s;
+  }
+  .navbarLinkListItem:nth-child(3) {
+    transition-delay: 0.6s;
+  }
+  .navbarLinkListItem:nth-child(4) {
+    transition-delay: 0.65s;
+  }
+}
 
 .heroWrapper,
 .carBrandContent,
