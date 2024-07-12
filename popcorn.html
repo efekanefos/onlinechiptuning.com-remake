@@ -13,6 +13,84 @@
     <title>Popcorn ve POP & BANG</title>
   </head>
   <body>
+    <!-- Header -->
+    <header class="headerContent">
+      <nav class="navbarContent">
+        <div class="logoContent">
+          <a href="/" class="navbarLinkListItemLink">
+            <img src="./images/logo.webp" alt="logo" class="logoImg" />
+          </a>
+        </div>
+        <ul class="navbarLinkList">
+          <li class="navbarLinkListItem">
+            <a href="/" class="navbarLinkListItemLink">Ana Sayfa</a>
+          </li>
+          <li class="navbarLinkListItem">
+            <a href="/kurumsal.html" class="navbarLinkListItemLink">Kurumsal</a>
+          </li>
+          <li class="navbarLinkListItem hasInnerList">
+            <a href="/hizmetlerimiz.html" class="navbarLinkListItemLink">Hizmetlerimiz</a>
+            <div id="servicesButton">&#x27A4;</div>
+            <ul id="servicesList" class="navbarInnerList">
+              <li class="navbarInnerListItem" id="vehicleLinks">
+                <a class="navbarInnerListItemLink" href="/chiptuning.html">Chiptuning İşlemleri </a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="/dpf-off.html">DPF Arıza Çözümleri </a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="/egr-off.html">EGR Arıza Çözümleri</a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="/adblue.html">Adblue Arıza Çözümleri</a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="/dtc-off.html">DTC Arıza Çözümleri</a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="#">Launch Control</a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="#">Speed Limit Removal</a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="/popcorn.html">Popcorn Aktivasyonu</a>
+              </li>
+              <li class="navbarInnerListItem">
+                <a class="navbarInnerListItemLink" href="#">Original</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbarLinkListItem hasInnerList">
+            <a href="#" class="navbarLinkListItemLink">Araç Türleri</a>
+            <div id="carListButton">&#x27A4;</div>
+            <ul id="carList" class="navbarInnerList">
+              <li class="navbarInnerListItem" id="vehicleLinks">
+                <a class="navbarInnerListItemLink" href="/car-tuning.html">Binek Araçlar</a>
+              </li>
+              <li class="navbarInnerListItem" id="vehicleLinks">
+                <a class="navbarInnerListItemLink" href="/truck-tuning.html">Ağır Vasıta Araçlar</a>
+              </li>
+              <li class="navbarInnerListItem" id="vehicleLinks">
+                <a class="navbarInnerListItemLink" href="/tractor-tuning.html">Traktörler</a>
+              </li>
+              <li class="navbarInnerListItem" id="vehicleLinks">
+                <a class="navbarInnerListItemLink" href="/motorcycle-tuning.html">Motosikletler</a>
+              </li>
+              <li class="navbarInnerListItem" id="vehicleLinks">
+                <a class="navbarInnerListItemLink" href="/atv-tuning.html">ATV ve UTV'ler</a>
+              </li>
+              <li class="navbarInnerListItem" id="vehicleLinks">
+                <a class="navbarInnerListItemLink" href="/marine-tuning.html">Deniz Araçları</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="mobileButton">
+          <img src="./images/more.png" alt="mobile header icon" class="mobileButtonIcon" />
+        </button>
+      </nav>
+    </header>
     <section class="servicePage">
       <div class="pageHeroContent">
         <h2 class="pageMainTitle">Popcorn ve POP & BANG</h2>
@@ -79,7 +157,7 @@
         </div>
         <div class="serviceDetailsDescContent">
           <div class="serviceDetailsDescImgContent">
-            <img src="./images/servicesPage/egr_details_image.png" alt="Chiptuning Details Page" class="serviceDetailsDescImg" />
+            <img src="./images/servicesPage/pop_bang_details_image.png" alt="Pop Bang Details Page" class="serviceDetailsDescImg" />
           </div>
 
           <h2 class="tuningInfoTitle">Popcorn ve Pop & Bang Nedir?</h2>
@@ -109,5 +187,6 @@
         </div>
       </div>
     </section>
+    <script src="./header.js"></script>
   </body>
 </html>

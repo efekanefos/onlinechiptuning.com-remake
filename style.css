@@ -30,39 +30,36 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+}
+
+.navbarLinkListItem.hasInnerList {
   position: relative;
-}
-.navbarLinkListItem.hasInnerList:hover .navbarInnerList {
-  display: block;
-}
-.navbarInnerList.hasInnerList:hover .navbarUnderList.double {
-  display: block;
 }
 .navbarInnerListItemLink {
   color: #fff;
   text-decoration: none;
+  display: inline-block;
+  width: max-content;
+  padding: 10px 5px;
 }
-.navbarInnerList,
-.navbarUnderList {
+
+.navbarInnerList {
   display: none;
   list-style: none;
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  top: 75px;
-}
-.navbarUnderList.double {
-  display: none;
-  left: -9.35rem;
-  top: 0px;
-  max-width: 150px;
+  background: rgba(0, 0, 0, 0.65);
+  top: 88px;
+  left: 0;
 }
 
 .navbarInnerListItem {
   color: #fff;
   font-family: "Nunito";
-  padding: 10px 5px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbarInnerListItem:hover {
+  background: rgba(0, 0, 0, 0.85);
 }
 .navbarLinkList {
   list-style: none;
@@ -77,6 +74,9 @@ body {
   font-family: "Nunito";
   padding: 2rem 0;
 }
+.navbarLinkListItem.hasInnerList:hover .navbarInnerList {
+  display: block;
+}
 
 .mobileButton {
   background-color: transparent;
@@ -87,22 +87,56 @@ body {
 .mobileButtonIcon {
   width: 100%;
 }
+#servicesButton,
+#carListButton {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  background-color: #a00;
+  display: flex;
+  width: 1.75rem;
+  height: 1.75rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transform: rotate(90deg);
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0.3rem;
+}
+.hasInnerList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 @media (min-width: 768px) {
   .mobileButton {
     display: none;
   }
+  #servicesButton,
+  #carListButton {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+  .navbarLinkListItem.hasInnerList:hover .navbarInnerList {
+    display: none;
+  }
   .headerContent {
     background-image: radial-gradient(circle, rgb(0, 0, 0) 20%, #25282a 100%) !important;
+    position: relative;
   }
   .navbarLinkList {
     position: fixed;
     flex-direction: column;
     width: 100%;
-    top: 81px;
+    top: 77px;
     left: 0;
     align-items: flex-start;
     gap: 0;
@@ -123,11 +157,12 @@ body {
     font-weight: 500;
     transition: all 0.5s;
     color: #fff;
+    padding: 0;
   }
   .navbarLinkListItem {
     transform: translateX(-100%);
     padding: 0.5rem;
-    border-bottom: 1px solid #ff8500;
+    border-bottom: 1px solid #a00;
     width: 100%;
     transition: all 0.5s;
   }
@@ -142,6 +177,23 @@ body {
   }
   .navbarLinkListItem:nth-child(4) {
     transition-delay: 0.65s;
+  }
+  .navbarInnerList {
+    position: relative;
+    background-color: transparent;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0rem;
+    margin-left: 3rem;
+    list-style: circle;
+  }
+  .navbarInnerList li {
+    border: none;
+  }
+  .navbarInnerList a {
+    width: 100%;
   }
 }
 
@@ -1158,6 +1210,36 @@ body {
   margin: 2rem 0;
   position: relative;
   margin-bottom: 4rem;
+}
+.sectionDivideContent.truck {
+  background: url(./images/tuningPage/tuning_contact_truck_background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.sectionDivideContent.tractor {
+  background: url(./images/tuningPage/tuning_contact_tractor_background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.sectionDivideContent.motorcycle {
+  background: url(./images/tuningPage/tuning_contact_motorcycle_background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.sectionDivideContent.atv {
+  background: url(./images/tuningPage/tuning_contact_atv_background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.sectionDivideContent.marine {
+  background: url(./images/tuningPage/tuning_contact_marine_background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 .contactBox {
   background-color: #0f0f0f;
